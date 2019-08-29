@@ -7,6 +7,12 @@ class Student
     @grade = grade
   end
 
+  def initialize(name)
+    @id = nil
+    @name = name
+    @grade = nil
+  end
+
   def id=(id)
     if !id.nil?
       raise NoMethodError
